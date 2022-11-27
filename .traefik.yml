@@ -1,0 +1,14 @@
+displayName: Modsecurity Plugin Redirect
+type: middleware
+
+import: github.com/FahmiTamar/traefik-modsecurity-redirect
+
+summary: 'Traefik plugin to proxy requests to owasp/modsecurity-crs:apache with redirection'
+
+testData:
+  ModsecurityUrl: http://waf:80
+  RedirectUrl: http://example.com
+  MaxBodySize: 10485760
+
+iconPath: ./img/icon.png
+bannerPath: ./img/banner.png
